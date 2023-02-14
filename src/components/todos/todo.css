@@ -1,0 +1,129 @@
+/*TODO CARD */
+
+.todo_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.todo_title {
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+.todo_icon1 {
+  margin-left: 2%;
+}
+.todo_icon2 {
+  margin-left: 2%;
+  /* position: absolute;
+  right: 0; */
+}
+
+.icon_btn {
+  background-color: transparent;
+  border: none;
+}
+
+.icon_btn:hover {
+  transform: scale(1.1);
+}
+.icon_btn .tooltiptext {
+  visibility: hidden;
+  width: 4rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.icon_btn:hover .tooltiptext {
+  visibility: visible;
+}
+/*TODO SECTION*/
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(202, 207, 209);
+  width: 70%;
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 20%; */
+}
+.todos_child {
+  width: 100%;
+}
+
+/*form*/
+.todo_form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo_form form {
+  width: 100%;
+  margin: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.todo_input {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 0.2rem;
+  border-color: rgb(137, 137, 255);
+}
+.todo_description {
+  border-width: 2px;
+  width: 100%;
+  height: 70%;
+  border-color: rgb(137, 137, 255);
+}
+
+.todoForm_btn {
+  background-color: transparent;
+  width: 15%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2rem;
+  border-color: rgb(137, 137, 255);
+}
+.todoForm_btn h1 {
+  font-size: 1rem;
+  color: rgb(47, 47, 47);
+}
+
+.form_btn:hover {
+  transform: scale(1.1);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+  .todo_title h1 {
+    font-size: 1rem;
+  }
+  .todo_form {
+    margin-top: 0.2rem;
+  }
+  .todoForm_btn {
+    width: 4rem;
+  }
+  .todoForm_btn h1 {
+    font-size: 0.7rem;
+  }
+}

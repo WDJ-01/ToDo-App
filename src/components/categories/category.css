@@ -1,0 +1,111 @@
+
+
+/*CATEGORY CARD*/
+.category_box {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.category_title {
+  margin-left: 10%;
+}
+.category_title h1 {
+  margin-right: .5rem;
+}
+.category_remove {
+   margin-left: 5%;
+}
+.category_remove button {
+  background-color: transparent;
+  border: none;
+}
+
+.category_remove button:hover {
+  transform: scale(1.1);
+}
+/* 
+.category_remove .tooltiptext {
+  visibility: hidden;
+  width: 4rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.category_remove:hover .tooltiptext {
+  visibility: visible;
+} */
+/*CATEGORY COLUM*/
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; */
+}
+.category_child {
+  width: 100%;
+}
+
+/*FORM*/
+
+.category_form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.category_form form {
+  width: 100%;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.category_input {
+  height: 120%;
+  width: 100%;
+  border-color: rgb(137, 137, 255);
+}
+
+.form_btn {
+  background-color: transparent;
+  border: none;
+}
+
+.form_btn:hover {
+  transform: scale(1.1);
+}
+
+/*MEDIS QUERIES*/
+
+@media screen and (max-width: 850px) {
+  .category_title{
+    margin-left: 0;
+  }
+  .category_title h1 {
+    font-size: 1rem;
+    margin-left: 0;
+
+  }
+  .category_form{
+    margin-top: .5rem;
+  }
+}
+
+
