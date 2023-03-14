@@ -6,7 +6,13 @@ const displayState = [];
 export const categorySlice = createSlice({
   name: "category",
   initialState: {
-    categoryList: [],
+    categoryList: [
+      {
+      title: 'Today',
+      id: uuidv4(),
+      todos: [],
+    }
+  ],
     todoList:[ ],
     todoToDisplay: [],
   },

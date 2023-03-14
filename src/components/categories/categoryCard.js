@@ -43,13 +43,12 @@ export const CategoryCard = ({ id, title, active }) => {
           <button onClick={removeCategory}>
             <MdRemoveCircleOutline
               className="remove_circle"
-              style={{ color: "red", fontSize: "1.5rem" }}
+              style={{ color: "black", fontSize: "1.5rem" }}
             />
-            {/* <span class="tooltiptext">remove</span> */}
           </button>
         </div>
         <div className="category_title">
-          <h1>{title}</h1>
+          <h1 contentEditable='true' >{title}</h1>
         </div>
 
       </div>

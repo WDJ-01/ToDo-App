@@ -6,7 +6,7 @@ import { MdRemoveCircleOutline } from "react-icons/md";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import "./todo.css";
 
-export const TodoCard = ({ id, title, description, completed }) => {
+export const TodoCard = ({ id, title, description }) => {
   const [isComplete, setIsComplete] = useState(false);
   const dispatch = useDispatch();
   const removeTodo = () => {
@@ -54,8 +54,8 @@ export const TodoCard = ({ id, title, description, completed }) => {
         </div>
 
         <div className="todo_title">
-          <h1>{title}</h1>
-          <p>{description}</p>
+          <h1 contentEditable='true'>{title}</h1>
+          <p contentEditable='true'>{description}</p>
         </div>
       </div>
     </>

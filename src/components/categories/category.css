@@ -51,11 +51,10 @@
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 100%;
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0; */
+  height: 96%;
+  border-radius: 5%;
+  background-color: white;
+  margin: .5rem .5rem 1rem .5rem
 }
 .category_child {
   width: 100%;
@@ -80,8 +79,9 @@
 .category_input {
   height: 120%;
   width: 100%;
-  border-color: rgb(137, 137, 255);
+  border: .15rem solid black;
 }
+
 
 .form_btn {
   background-color: transparent;
